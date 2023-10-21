@@ -11,28 +11,28 @@
         </a>
         <ul class="navbar-nav mb-2 mb-lg-0 d-flex ms-3">
                <li class="nav-item">
-                <a class="nav-link fw-bold" href="/shop/shopping_list.do?f_seq=&page=">인재 둘러보기</a>
+                <a class="nav-link fw-bold" href="/shop/shopping_list.do?f_seq=&page=">人材見回り</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="/portfolio.do">포트폴리오</a>
+                <a class="nav-link fw-bold" href="/portfolio.do">ポートフォリオ</a>
               </li>
         <sec:authorize access="hasRole('ROLE_ADMIN')">
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="/checkprofile.do">관리자 메뉴</a>
+                <a class="nav-link fw-bold" href="/checkprofile.do">管理者メニュー</a>
               </li>
 
            </sec:authorize>
            <sec:authorize access="hasRole('ROLE_MEMBER')">
                  <li class="nav-item">
-                <a class="nav-link fw-bold" href="/listenlist.do">들어볼텨</a>
+                <a class="nav-link fw-bold" href="/listenlist.do">聞いてみる</a>
               </li>
                  <li class="nav-item">
-                <a class="nav-link fw-bold" href="/speakmlist.do">말해볼텨</a>
+                <a class="nav-link fw-bold" href="/speakmlist.do">話してみる</a>
               </li>
            </sec:authorize>
            <sec:authorize access="hasRole('ROLE_BUSINESS')">
                  <li class="nav-item">
-                <a class="nav-link fw-bold" href="/speakblist.do">말해볼텨</a>
+                <a class="nav-link fw-bold" href="/speakblist.do">話してみる</a>
               </li>
            </sec:authorize>
         </ul>
@@ -48,15 +48,15 @@
          
            <sec:authorize access="hasRole('ROLE_MEMBER')">
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="/jobapply.do">구직 신청</a>
+                <a class="nav-link fw-bold" href="/jobapply.do">就職申請</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="/user_profile.do">마이페이지</a>
+                <a class="nav-link fw-bold" href="/user_profile.do">マイページ</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="/question.do">고객센터</a>
+                <a class="nav-link fw-bold" href="/question.do">お客様センター</a>
               </li>
            </sec:authorize>
            
@@ -76,9 +76,9 @@
            
            
            <li class="nav-item">
-             <a class="nav-link fw-bold" href="#" onclick="btnlogout.click();">로그아웃</a>
+             <a class="nav-link fw-bold" href="#" onclick="btnlogout.click();">ログアウト</a>
                  <form method="POST" action="/logout.do" style="display:none" id="formlogout">
-               <button class="btn" type="submit" id="btnlogout" style="display:none">로그아웃</button>
+               <button class="btn" type="submit" id="btnlogout" style="display:none">ログアウト</button>
                <input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }">
             </form>
            </li>
@@ -120,18 +120,14 @@
                  })
               };
               
-              
-              
-              
-              
            </script>
            </sec:authorize>
            <sec:authorize access="isAnonymous()">
            <li class="nav-item">
-             <a class="nav-link fw-bold" href="/login.do">로그인</a>
+             <a class="nav-link fw-bold" href="/login.do">Login</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link fw-bold" href="/signup.do">회원가입</a>
+             <a class="nav-link fw-bold" href="/signup.do">SignUp</a>
            </li>
            </sec:authorize>
          </ul>

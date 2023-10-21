@@ -53,7 +53,7 @@
 							<h5 class="card-title m-0">${list[0].fd_name }</h5>
 							<p class="card-text m-0" style="color: #DB4444;">
 							<fmt:formatNumber type="number" maxFractionDigits="3" value="${list[0].ja_salary}" />
-							원</p>
+							￥</p>
 							<div class="m-0 d-flex">
 								<c:forEach begin="1" end="${(list[0].rate).substring(0,1)}" varStatus="vs">
 									<img src="/resources/img/Vector.svg"
@@ -62,7 +62,7 @@
 									</c:if>
 									>
 								</c:forEach>
-								<span class="small">(${list[0].rate }점)</span>
+								<span class="small">(${list[0].rate }点)</span>
 							</div>
 						</div>
 					</div>
@@ -75,7 +75,7 @@
 							<h5 class="card-title m-0">${list[1].fd_name }</h5>
 							<p class="card-text m-0" style="color: #DB4444;">
 							<fmt:formatNumber type="number" maxFractionDigits="3" value="${list[1].ja_salary}" />
-							원</p>
+							￥</p>
 							<div class="m-0 d-flex">
 								<c:forEach begin="1" end="${(list[1].rate).substring(0,1)}" varStatus="vs">
 									<img src="/resources/img/Vector.svg"
@@ -84,7 +84,7 @@
 									</c:if>
 									>
 								</c:forEach>
-								<span class="small">(${list[1].rate }점)</span>
+								<span class="small">(${list[1].rate }点)</span>
 							</div>
 						</div>
 					</div>
@@ -97,7 +97,7 @@
 							<h5 class="card-title m-0">${list[2].fd_name }</h5>
 							<p class="card-text m-0" style="color: #DB4444;">
 							<fmt:formatNumber type="number" maxFractionDigits="3" value="${list[2].ja_salary}" />
-							원</p>
+							￥</p>
 							<div class="m-0 d-flex">
 								<c:forEach begin="1" end="${(list[2].rate).substring(0,1)}" varStatus="vs">
 									<img src="/resources/img/Vector.svg"
@@ -106,7 +106,7 @@
 									</c:if>
 									>
 								</c:forEach>
-								 <span class="small">(${list[2].rate }점)</span>
+								 <span class="small">(${list[2].rate }点)</span>
 							</div>
 						</div>
 					</div>
@@ -119,7 +119,7 @@
 							<h5 class="card-title m-0">${list[3].fd_name }</h5>
 							<p class="card-text m-0" style="color: #DB4444;">
 							<fmt:formatNumber type="number" maxFractionDigits="3" value="${list[3].ja_salary}" />
-							원</p>
+							￥</p>
 							<div class="m-0 d-flex">
 								<c:forEach begin="1" end="${(list[3].rate).substring(0,1)}" varStatus="vs">
 									<img src="/resources/img/Vector.svg"
@@ -129,7 +129,7 @@
 									>
 								</c:forEach>
 								 <span
-									class="small">(${list[3].rate}점)</span>
+									class="small">(${list[3].rate}点)</span>
 							</div>
 						</div>
 					</div>
@@ -137,7 +137,7 @@
 			</div>
 		</div>
 		<div class="text-center w-100 mt-4 mb-4">
-			<button class="btn w-25" onclick="location.href='/shop/shopping_list.do?f_seq=&page='">모든 인재 보기</button>
+			<button class="btn w-25" onclick="location.href='/shop/shopping_list.do?f_seq=&page='">全体を見る</button>
 		</div>
 	</section>
 
