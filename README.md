@@ -50,7 +50,7 @@
 ### ✔ IDE
 - Eclipse, SQLDeveloper, AWS, vscode, eXERD, Figma, STS
 ### ✔ 開発用 PC OS
-- 2S version(platform) : Windows , Mac
+- version(platform) : Windows , Mac
 
 <br>
 
